@@ -2,7 +2,7 @@
 
 This collection of python script allows for the creation of artificial GPS tracks. It builds on the ideas of Thierry, Chaix, and Kestens (2013) they put forward in "Detecting activity locations from raw GPS data: a novel kernel-based algorith" (International Journal of Health Geography. The workflow of Ian Broad (http://ianbroad.com/download/script/CreatePointsLines.py) is used and adjusted to transform polylines (step 4; see below) to points.
 
-#Requirements
+## Requirements
 1) Python with the following packages:
 - arcpy
 - pandas
@@ -10,10 +10,10 @@ This collection of python script allows for the creation of artificial GPS track
 
 2) Flowmap (http://flowmap.geo.uu.nl/). Alternatively the ArcGIS network analysist can be used; but this requries an adjustment of the code.
 
-#Usage
+## Usage
 Adjust files, pathnames according to needs (for each script), and run scripts in order. 
 
-#Steps
+## Steps
 1.	Selection of a random number of random activity location (minimum of two, maximum of nine) within a set study area.
 
 2.	Random assignment of a duration classification to each of the activities (short, medium, long). After randomly assigning a duration classification to each activity, the actual duration of the activity is determined using a Poisson distribution. The seed value for  is randomly drawn from a normal distribution with the following parameters:
