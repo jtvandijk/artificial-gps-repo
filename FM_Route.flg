@@ -1,0 +1,100 @@
+# ----------------FLOWMAP FULL LOG FILE HEADER----------------
+# File: FILEPATH \\ InputFiles\FM_Route.flg
+# Creation date: 03-25-2017
+# Creation time: 15:25:30
+# ------------------------------------------------------------
+# ALIAS FILEPATH \\ InputFiles\FM_Route.flg
+# BEGIN PROJECT SECTION
+     # PROJECT RESET:
+        YES
+     # PROJECT FILE:
+        FILEPATH \\ InputFiles\FM_Route.fpf
+     # PROJECT FILE VERSION:
+        7.4
+     # DATABASE MANAGEMENT SYTEM:
+        dBASE III;
+     # DATABASE FILE EXTENSION:
+        dbf
+     # PROJECT WORK SPACE:
+        FILEPATH \\ InputFiles
+     # IMPORT FILE:
+        [None]
+     # MAP FILE:
+        FILEPATH \\ InputFiles\ROADSTRACKS.006
+     # DISTANCE TABLE:
+        [None]
+     # ORIGIN FILE:
+        FILEPATH \\ OriginDestination\AC_00101.DBF
+     # DESTINATION FILE:
+        FILEPATH \\ OriginDestination\AC_00101.DBF
+     # FLOW FILE:
+        FILEPATH \\ OriginDestination\F001AC12.dbf
+     # FLOW FIELD:
+        SCORE
+     # ORIGIN FIELD:
+        ORIG
+     # DESTINATION FIELD:
+        DEST
+     # FLOW TABLE:
+        [None]
+     # SYMBOLOGY FILE:
+        [Default]
+     # BACKGROUND BITMAP FILE:
+        [None]
+     # EXPORT FILE:
+        [None]
+     # MAP EXTENT REFERENCE:
+        FILEPATH \\ InputFiles\ROADSTRACKS.006
+        FILEPATH \\ OriginDestination\AC_00101.DBF
+        FILEPATH \\ OriginDestination\AC_00101.DBF
+        
+        
+     # X-COORDINATE LOWER LEFT CORNER:
+        -60909.73
+     # Y-COORDINATE LOWER LEFT CORNER:
+        -3796964
+     # X-COORDINATE UPPER RIGHT CORNER:
+        11059.15
+     # Y-COORDINATE UPPER RIGHT CORNER:
+        -3722357
+     # MAP MEASUREMENT UNIT:
+        Meters
+# END PROJECT SECTION
+# MENU BUTTON: analysis
+   # MENU BUTTON: flow assignment to network
+# BEGIN FLOW ASSIGNMENT SECTION
+     # USE FLOWS FROM FILE:
+        DATABASE FILE
+     # NAME ATTRIBUTE FILE:
+        ROADSTR3.DBF
+     # FIELD NAME IMPEDANCE (OUT) ATTRIBUTE:
+        CAR_FT    
+     # FIELD NAME IMPEDANCE (HOME) ATTRIBUTE:
+        CAR_TF    
+     # CONNECT METHOD:
+        LINES
+     # ASSIGNMENT OF PARTIAL FLOWS:
+        YES
+     # FIELD NAME ACCESS ATTRIBUTE:
+        CAR_FT    
+     # NAME FLOWSIZE FIELD:
+        SCORE     
+     # NAME ORIGIN REFERENCE FIELD:
+        ORIG      
+     # NAME DESTINATION REFERENCE FIELD:
+        DEST      
+     # FIELD NAME FLOW IN ANY DIRECTION:
+        FP001AC1
+     # FIELD DECIMALS FLOW IN ANY DIRECTION:
+        0
+     # BEGIN MESSAGE
+        Flows allocated to 98 out of 125024 network segments
+        Largest Allocation to single segment: 2
+     # END MESSAGE
+     # BEGIN MESSAGE
+        Writing of field(s) FP001AC1 completed successfully
+     # END MESSAGE
+# END FLOW ASSIGNMENT SECTION
+# MENU BUTTON: options
+   # MENU BUTTON: mode of operation
+      # MENU BUTTON: interactive

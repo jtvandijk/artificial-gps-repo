@@ -1,0 +1,104 @@
+# ----------------FLOWMAP FULL LOG FILE HEADER----------------
+# File: FILEPATH \\ FM_Import.flg
+# Creation date: 03-25-2017
+# Creation time: 14:28:19
+# ------------------------------------------------------------
+# ALIAS FILEPATH \\ FM_Import.flg
+# BEGIN PROJECT SECTION
+     # PROJECT RESET:
+        YES
+     # PROJECT FILE:
+        FILEPATH \\ FM_Import.fpf
+     # PROJECT FILE VERSION:
+        7.4
+     # DATABASE MANAGEMENT SYTEM:
+        dBASE III;
+     # DATABASE FILE EXTENSION:
+        dbf
+     # PROJECT WORK SPACE:
+        FILEPATH \\ InputFiles
+     # IMPORT FILE:
+        [None]
+     # MAP FILE:
+        [None]
+     # DISTANCE TABLE:
+        [None]
+     # ORIGIN FILE:
+        [None]
+     # DESTINATION FILE:
+        [None]
+     # FLOW FILE:
+        [None]
+     # FLOW TABLE:
+        [None]
+     # SYMBOLOGY FILE:
+        [Default]
+     # BACKGROUND BITMAP FILE:
+        [None]
+     # EXPORT FILE:
+        [None]
+     # MAP EXTENT REFERENCE:
+        FILEPATH \\ ROADSTRACKS.006
+        
+     # X-COORDINATE LOWER LEFT CORNER:
+        -60909.73
+     # Y-COORDINATE LOWER LEFT CORNER:
+        -3796964
+     # X-COORDINATE UPPER RIGHT CORNER:
+        11059.15
+     # Y-COORDINATE UPPER RIGHT CORNER:
+        -3722357
+     # MAP MEASUREMENT UNIT:
+        Meters
+# END PROJECT SECTION
+# MENU BUTTON: file
+   # MENU BUTTON: convert files
+      # MENU BUTTON: convert files
+         # MENU BUTTON: arcview (shape) -> bna
+# BEGIN FILE CONVERSION SECTION
+     # CONVERT OPTION:
+        arcview (shape) -> bna
+     # INPUT FOLDER:
+        FILEPATH \\ OriginDestination\
+     # INPUT FILE:
+        AC_001.shp
+     # OUTPUT FOLDER:
+       FILEPATH \\ OriginDestination\
+     # OUTPUT FILE:
+        AC_001.bna
+     # OUTPUT FILE MODE:
+        Overwrite
+     # NAME LABEL ITEM:
+        NAME            
+     # DATA TYPE LABEL ITEM:
+        Text     
+     # BEGIN MESSAGE
+        Conversion to BNAformat completed successfully!
+     # END MESSAGE
+# END FILE CONVERSION SECTION
+# MENU BUTTON: file
+   # MENU BUTTON: convert files
+      # MENU BUTTON: bna -> flowmap
+# BEGIN FILE CONVERSION SECTION
+     # CONVERT OPTION:
+        bna -> flowmap
+     # INPUT FOLDER:
+        FILEPATH \\ OriginDestination\
+     # INPUT FILE:
+        AC_001.bna
+     # OUTPUT FOLDER:
+        FILEPATH \\ OriginDestination\
+     # OUTPUT FILE:
+        AC_00101.006
+     # OUTPUT FILE MODE:
+        Overwrite
+     # OBJECT TYPE:
+        point
+     # BEGIN MESSAGE
+        Conversion from E:\TARTU\POTENTIALPATHAREA\RANDOMTRACKSACTIVITIES\ORIGINDESTINATION\ACTV_001.BNA
+        to ACTV_001.DBF completed successfully!
+     # END MESSAGE
+# END FILE CONVERSION SECTION
+# MENU BUTTON: options
+   # MENU BUTTON: mode of operation
+      # MENU BUTTON: interactive
