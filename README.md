@@ -8,7 +8,9 @@ This collection of python script allows for the creation of artificial GPS track
 - pandas
 - numpy
 
-2) Flowmap (http://flowmap.geo.uu.nl/). Alternatively the ArcGIS network analysist can be used; but this requries an adjustment of the code.
+2) Flowmap (http://flowmap.geo.uu.nl/). Alternatively the ArcGIS network analysist can be used; but this requries an adjustment of the code. Script requires base Flomwap scripts to import points and execute shortest path analysis; examples attached.
+
+3) Road network (topologically correct) with attribute values for shortest path analysis.
 
 ## Usage
 Adjust files, pathnames according to needs (for each script), and run scripts in order. 
