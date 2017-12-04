@@ -1,6 +1,6 @@
 # Creating Artificial GPS-tracks
 
-This collection of python script allows for the creation of artificial GPS tracks. It builds on the ideas of Thierry, Chaix, and Kestens (2013) they put forward in "Detecting activity locations from raw GPS data: a novel kernel-based algorith" (International Journal of Health Geography. The workflow of Ian Broad (http://ianbroad.com/download/script/CreatePointsLines.py) is used and adjusted to transform polylines (step 4; see below) to points.
+This collection of python script allows for the creation of artificial GPS tracks. It builds on the ideas of Thierry, Chaix, and Kestens (2013) that they put forward in "Detecting activity locations from raw GPS data: a novel kernel-based algorith" (International Journal of Health Geography). The workflow of Ian Broad (http://ianbroad.com/download/script/CreatePointsLines.py) is used and adjusted to transform polylines (step 4; see below) to points.
 
 ## Requirements
 1) Python with the following packages:
@@ -8,7 +8,7 @@ This collection of python script allows for the creation of artificial GPS track
 - pandas
 - numpy
 
-2) Flowmap (http://flowmap.geo.uu.nl/). Alternatively the ArcGIS network analysist can be used; but this requries an adjustment of the code. Script requires base Flomwap scripts to import points and execute shortest path analysis; examples attached.
+2) Flowmap (http://flowmap.geo.uu.nl/). Alternatively the ArcGIS network analysist can be used; but this requires an adjustment of the code. Script requires base Flomwap scripts to import points and execute shortest path analysis; examples attached.
 
 3) Road network (topologically correct) with attribute values for shortest path analysis.
 
