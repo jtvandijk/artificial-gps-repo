@@ -1,4 +1,3 @@
-
 # JTVD - 2017
 
 #Parts of this code have been borrowd from:
