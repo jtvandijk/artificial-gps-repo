@@ -1,13 +1,7 @@
-#===============================================================================
-# JTVD - 2016
-#===============================================================================
+# JTVD - 2017
 
-#SOURCE CODE:
+#Parts of this code have been borrowd from:
 #http://ianbroad.com/download/script/CreatePointsLines.py
-
-#===============================================================================
-# SET PARAMETERS
-#===============================================================================
 
 #Import modules
 import arcpy
@@ -33,10 +27,7 @@ long_dur_dev = 60
 #Set measurement frequency GPS
 meas_freq = 30
 
-#===============================================================================
-# DEFINE FUNCTIONS
-#===============================================================================
-
+#Functions
 def FieldExist(featureclass, fieldname):
     fieldList = arcpy.ListFields(featureclass, fieldname)
 
@@ -47,9 +38,7 @@ def FieldExist(featureclass, fieldname):
     else:
         return False
     
-#===============================================================================
-# IDENTIFY STOP LOCATIONS
-#===============================================================================
+#Identify Stop locations
 
 #Get tracks
 point_fc = arcpy.ListFeatureClasses("AC*")
