@@ -1,12 +1,4 @@
-# -*- coding: utf-8 -*-
-#===============================================================================
 # JTVD - 2017
-#===============================================================================
-
-#===============================================================================
-# SET PARAMETERS
-#===============================================================================
-
 
 #Import modules
 import arcpy, os, datetime
@@ -37,13 +29,7 @@ time_earliest = "06:00:00"
 time_latest = "08:00:00"
 measurement_freq = 30
 
-#Set moving window (minutes)
-window = 10
-
-#===============================================================================
-# DEFINE FUNCTIONS
-#===============================================================================
-
+#Functions
 def FieldExist(featureclass, fieldname):
     fieldList = arcpy.ListFields(featureclass, fieldname)
 
@@ -92,10 +78,6 @@ def calc_bearing(pointA, pointB):
     compass_bearing = (initial_bearing + 360) % 360
 
     return compass_bearing
-
-#===============================================================================
-# INTRODUCE NOISE STOP LOCATIONS
-#===============================================================================
 
 #Get tracks
 activity_fc = arcpy.ListFeatureClasses("NOISE*")
@@ -317,4 +299,4 @@ for p in activity_fc:
     with arcpy.da.UpdateCursor(output, "DIR_CHANGE") as rows:
         for j, row in enumerate(rows):
             row[0] = dir_change[j]
-#            rows.updateRow(row)
+            rows.updateRow(row)
