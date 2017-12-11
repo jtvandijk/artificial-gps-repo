@@ -1,13 +1,7 @@
-#===============================================================================
 # JTVD - 2017
-#===============================================================================
 
-#SOURCE CODE:
+#Parts of this code have been borrowd from:
 #http://ianbroad.com/download/script/CreatePointsLines.py
-
-#===============================================================================
-# SET PARAMETERS
-#===============================================================================
 
 #Import modules
 import arcpy, os
@@ -51,10 +45,7 @@ walk_dev = 2
 
 measurement_frequency = 30.0
 
-#===============================================================================
-# DEFINE FUNCTIONS
-#===============================================================================
-
+#Functions
 def FieldExist(featureclass, fieldname):
     fieldList = arcpy.ListFields(featureclass, fieldname)
 
@@ -65,9 +56,7 @@ def FieldExist(featureclass, fieldname):
     else:
         return False
     
-#===============================================================================
-# GENERATE TRACK -- POINTS
-#===============================================================================
+#Transform polyline into points
 
 #Get tracks
 line_fc = arcpy.ListFeatureClasses("LINE*")
