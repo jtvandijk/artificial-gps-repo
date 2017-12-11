@@ -1,10 +1,4 @@
-#===============================================================================
 # JTVD - 2017
-#===============================================================================
-
-#===============================================================================
-# SET PARAMETERS
-#===============================================================================
 
 #Import modules
 import arcpy, os
@@ -21,10 +15,7 @@ hart94 = "PROJCS['Hartebeesthoek94_Lo19',GEOGCS['GCS_Hartebeesthoek_1994',DATUM[
 env.overwriteOutput = True
 env.parallelProcessingFactor = "4"
 
-#===============================================================================
-# DEFINE FUNCTIONS
-#===============================================================================
-
+#Functions
 def FieldExist(featureclass, fieldname):
     fieldList = arcpy.ListFields(featureclass, fieldname)
 
@@ -34,10 +25,8 @@ def FieldExist(featureclass, fieldname):
         return True
     else:
         return False
-    
-#===============================================================================
-# FIND SELF-INTERSECTION LINES AND REMOVE SELF INTERSECTING LINES
-#===============================================================================
+
+#Find lines that intersect themselves and remove these
 
 #Set counter
 line_fc = arcpy.ListFeatureClasses("LINE*")
