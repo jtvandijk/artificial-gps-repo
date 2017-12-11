@@ -1,10 +1,4 @@
-#===============================================================================
 # JTVD - 2017
-#===============================================================================
-
-#===============================================================================
-# SET PARAMETERS
-#===============================================================================
 
 #Import modules
 import arcpy, os, time, datetime
@@ -23,10 +17,7 @@ env.parallelProcessingFactor = "4"
 #Set measurement frequency
 measurement_freq = 30
 
-#===============================================================================
-# DEFINE FUNCTIONS
-#===============================================================================
-
+#Functions
 def FieldExist(featureclass, fieldname):
     fieldList = arcpy.ListFields(featureclass, fieldname)
 
@@ -37,9 +28,7 @@ def FieldExist(featureclass, fieldname):
     else:
         return False
     
-#===============================================================================
-# INTRODUCE NOISE STOP LOCATIONS
-#===============================================================================
+#Introduce noise in stop locations
 
 #Get tracks
 point_fc = arcpy.ListFeatureClasses("AC*")
