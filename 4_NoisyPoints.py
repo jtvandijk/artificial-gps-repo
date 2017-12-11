@@ -1,13 +1,8 @@
-#===============================================================================
+
 # JTVD - 2017
-#===============================================================================
 
-#SOURCE CODE:
+#Parts of this code have been borrowd from:
 #http://ianbroad.com/download/script/CreatePointsLines.py
-
-#===============================================================================
-# SET PARAMETERS
-#===============================================================================
 
 #Import modules
 import arcpy, os
@@ -26,10 +21,7 @@ env.parallelProcessingFactor = "4"
 standard_dev = 1
 scale_f = 10
 
-#===============================================================================
-# DEFINE FUNCTIONS
-#===============================================================================
-
+#Functions
 def FieldExist(featureclass, fieldname):
     fieldList = arcpy.ListFields(featureclass, fieldname)
 
@@ -39,11 +31,9 @@ def FieldExist(featureclass, fieldname):
         return True
     else:
         return False
-    
-#===============================================================================
-# INTRODUCE NOISE POINTS
-#===============================================================================
 
+#Introduce noise into points
+    
 #Get tracks
 point_fc = arcpy.ListFeatureClasses("POINTS*")
 
