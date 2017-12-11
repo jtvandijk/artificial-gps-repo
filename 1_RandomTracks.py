@@ -1,10 +1,4 @@
-#===============================================================================
 # JTVD - 2017
-#===============================================================================
-
-#===============================================================================
-# SET PARAMETERS
-#===============================================================================
 
 #Import modules
 import arcpy, os, subprocess, shutil
@@ -41,10 +35,7 @@ min_activities = 2
 #Maximum value of 11 in order to comply with Flowmap naming conventions
 max_activities = 9
 
-#===============================================================================
-# DEFINE FUNCTIONS
-#===============================================================================
-
+#Functions
 def FieldExist(featureclass, fieldname):
     fieldList = arcpy.ListFields(featureclass, fieldname)
 
@@ -55,9 +46,7 @@ def FieldExist(featureclass, fieldname):
     else:
         return False
     
-#===============================================================================
-# GENERATE START / STOP TRACKS
-#===============================================================================
+#Generate Start and Stop Activities
 
 #Set counter
 count = 0
@@ -130,11 +119,9 @@ while count < (n_tracks):
     #Execute FM
     subprocess.call(executable)
 
-#===============================================================================
-# GENERATE TRACK -- FLOWMAP
-#===============================================================================
+#Generate Track in Flowmap
 
-    #Get combinations for Flowfile
+#Get combinations for Flowfile
     for a in range(1, activities):
 
         #Create Flowfile
@@ -205,10 +192,8 @@ while count < (n_tracks):
         subprocess.call(executable)
         print "Success: ", executable
 
-#===============================================================================
-# GENERATE TRACK -- LINE
-#===============================================================================
-
+    #Generate Polyline
+    
     #Gather path fields
     dropFields = []
  
