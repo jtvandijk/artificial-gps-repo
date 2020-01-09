@@ -44,11 +44,6 @@ Adjust files, pathnames according to needs (for each script), and run scripts in
 
 8.	Calculation of attribute values (e.g. speed, acceleration, distance to road network, etc.).
 
-## Artificial GPS tracks
-The set of artificial GPS tracks that has been created with this code is available through the following direct Dropbox link: https://www.dropbox.com/sh/c8nkm0ewo2ucidu/AADghXI5UFf6PpPEkewxg-0ha?dl=0 
-
-The first set exists of 100 tracks with a measurement frequency of 30 seconds (merged into one dataset). The second set exists of 100 tracks with a measurement frequency of 60 seconds (merged into one dataset). 
-
+## Code
 Author: Justin van Dijk
-
 Created: 11/12/2017
